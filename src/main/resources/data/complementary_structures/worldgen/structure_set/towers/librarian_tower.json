@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:towers/librarian_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749118,
+    "spacing": 60,
+    "separation": 50,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

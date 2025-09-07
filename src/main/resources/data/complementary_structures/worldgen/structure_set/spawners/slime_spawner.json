@@ -1,0 +1,16 @@
+
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:spawners/slime_spawner",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749075,
+    "spacing": 21,
+    "separation": 15,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

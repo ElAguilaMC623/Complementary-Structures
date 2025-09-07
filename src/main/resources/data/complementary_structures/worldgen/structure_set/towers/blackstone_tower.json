@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:towers/blackstone_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749111,
+    "spacing": 60,
+    "separation": 25,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

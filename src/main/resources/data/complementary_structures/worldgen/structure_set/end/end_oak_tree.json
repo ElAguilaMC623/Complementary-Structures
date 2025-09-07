@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:end/end_oak_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749096,
+    "spacing": 40,
+    "separation": 15,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

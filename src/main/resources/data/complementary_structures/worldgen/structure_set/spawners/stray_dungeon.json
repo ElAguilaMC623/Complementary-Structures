@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:spawners/stray_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749119,
+    "spacing": 20,
+    "separation": 12,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

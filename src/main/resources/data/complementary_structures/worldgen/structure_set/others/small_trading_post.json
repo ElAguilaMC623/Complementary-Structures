@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:others/small_trading_post",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749071,
+    "spacing": 86,
+    "separation": 55,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

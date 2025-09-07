@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:towers/ruined_stone_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749106,
+    "spacing": 67,
+    "separation": 50,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

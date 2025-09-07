@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:towers/watchtower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749109,
+    "spacing": 45,
+    "separation": 30,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}

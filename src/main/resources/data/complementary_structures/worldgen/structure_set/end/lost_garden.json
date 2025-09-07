@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:end/lost_garden",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749092,
+    "spacing": 75,
+    "separation": 42,
+    "type": "minecraft:random_spread",
+    "frequency": 1.0
+  }
+}
