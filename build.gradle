@@ -5,7 +5,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = "1.4.3-1.19.2"
+version = "1.5.0-1.19.2"
 group = "net.elaguilamc623."
 
 base {
@@ -89,8 +89,8 @@ dependencies {
 // See https://docs.gradle.org/current/dsl/org.gradle.language.jvm.tasks.ProcessResources.html
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
-            minecraft_version: "1.19.2", minecraft_version_range: "[1.19.2]",
-            forge_version: "43.5.0", forge_version_range: "[43.5.0]",
+            minecraft_version: "1.19.2", minecraft_version_range: "[1.19,1.19.2]",
+            forge_version: "43.5.0", forge_version_range: "[41.1.0,43.5.0]",
             loader_version_range: "[1,)", mod_id: "complementary_structures",
             complementary_structures: "complementary_structures", mod_name: "Complementary Structures", mod_license: "MIT License", mod_version: "1.4.3-1.19.2",
             mod_authors: "ElAguilaMC623", mod_description: "A mod that adds small and big structures to your world.",

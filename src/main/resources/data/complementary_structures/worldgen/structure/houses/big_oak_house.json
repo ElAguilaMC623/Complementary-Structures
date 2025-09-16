@@ -3,7 +3,7 @@
   "start_pool": "complementary_structures:houses/big_oak_house/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#complementary_structures:has_structure/temperate_biomes/temperate_biomes_6v",
+  "biomes": "#complementary_structures:has_structure/temperate_biomes/temperate_biomes_3m",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

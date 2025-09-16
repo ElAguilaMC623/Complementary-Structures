@@ -3,10 +3,7 @@
   "start_pool": "complementary_structures:towers/savanna_watchtower/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": [
-    "minecraft:savanna",
-    "minecraft:savanna_plateau"
-  ],
+  "biomes": "#complementary_structures:has_structure/savanna_biomes/savanna_biomes_1m",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
