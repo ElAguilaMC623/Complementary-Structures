@@ -1,4 +1,4 @@
-package net.elaguilamc623.complementary_structures.item;
+package net.elaguilamc623.complementary_structures.item.properties;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.SwordItem;
@@ -10,7 +10,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.damagesource.DamageSource;
 
 public class ObsidianSwordItem extends SwordItem {
     public ObsidianSwordItem(Item.Properties properties) {
@@ -29,7 +28,7 @@ public class ObsidianSwordItem extends SwordItem {
                 target.getType() == EntityType.ENDERMITE ||
                 target.getType() == EntityType.SHULKER) {
             if (attacker instanceof Player player) {
-                target.hurt(DamageSource.playerAttack(player), 2.5F);
+                target.hurt(player.level().damageSources().playerAttack(player), 2.5F);
             }
         }
 

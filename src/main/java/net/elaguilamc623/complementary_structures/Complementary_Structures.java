@@ -1,19 +1,19 @@
 package net.elaguilamc623.complementary_structures;
 
 import com.mojang.logging.LogUtils;
-import net.elaguilamc623.complementary_structures.item.ModItems;
-import net.elaguilamc623.complementary_structures.item.ModPotions;
+import net.elaguilamc623.complementary_structures.registry.ModItems;
+import net.elaguilamc623.complementary_structures.registry.ModPotions;
+import net.elaguilamc623.complementary_structures.registry.ModStructurePlacements;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
@@ -34,12 +34,17 @@ public class Complementary_Structures
         // Esto registra las pociones de ModPotions
         ModPotions.register(modEventBus);
 
+        ModStructurePlacements.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        modEventBus.addListener(this::addCreative);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -51,12 +56,26 @@ public class Complementary_Structures
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
+
+    // Esto registra en que Creative Tabs esta cada item
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.PRISMARINE_INGOT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.PRISMARINE_SWORD);
+            event.accept(ModItems.PRISMARINE_AXE);
+            event.accept(ModItems.OBSIDIAN_SWORD);
+            event.accept(ModItems.KING_BLADE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.PRISMARINE_AXE);
+            event.accept(ModItems.PRISMARINE_PICKAXE);
+            event.accept(ModItems.PRISMARINE_SHOVEL);
+            event.accept(ModItems.PRISMARINE_HOE);
+
         }
     }
 }

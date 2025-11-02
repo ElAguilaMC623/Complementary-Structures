@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "complementary_structures:towers/small_desert_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 823749068,
+    "spacing": 50,
+    "separation": 30,
+    "type": "complementary_structures:advanced_structure_placement",
+    "frequency": 1.0
+  }
+}

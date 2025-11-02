@@ -1,10 +1,10 @@
-package net.elaguilamc623.complementary_structures.item;
+package net.elaguilamc623.complementary_structures.item.properties;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
@@ -12,8 +12,8 @@ import net.minecraft.world.level.Level;
 
 // Esto le da al objeto 2 propiedades, ser de Diamond Tier y estar en la tab del creativo de combat.
 public class PrismarineSwordModifier extends SwordItem {
-    public PrismarineSwordModifier() {
-        super(Tiers.DIAMOND, 3, -2.4f, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+    public PrismarineSwordModifier(Item.Properties properties) {
+        super(Tiers.DIAMOND, 3, -2.4f, properties);
     }
 
     // Detecta si el jugador esta en agua

@@ -1,4 +1,4 @@
-package net.elaguilamc623.complementary_structures.item;
+package net.elaguilamc623.complementary_structures.registry;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

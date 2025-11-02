@@ -7,9 +7,13 @@
   ],
   "placement": {
     "salt": 823749074,
+    "custom_exclusion_zone": {
+      "sets": ["#complementary_structures:all_structures"],
+      "radius": 4
+    },
     "spacing": 76,
     "separation": 50,
-    "type": "minecraft:random_spread",
+    "type": "complementary_structures:advanced_structure_placement",
     "frequency": 1.0
   }
 }

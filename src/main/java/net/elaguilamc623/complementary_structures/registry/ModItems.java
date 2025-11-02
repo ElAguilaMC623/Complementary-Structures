@@ -1,6 +1,8 @@
-package net.elaguilamc623.complementary_structures.item;
+package net.elaguilamc623.complementary_structures.registry;
 
 import net.elaguilamc623.complementary_structures.Complementary_Structures;
+import net.elaguilamc623.complementary_structures.item.*;
+import net.elaguilamc623.complementary_structures.item.properties.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -21,13 +23,13 @@ public class ModItems {
     // El RegistryObject registra un objeto el cual es un item debido a <Item>, llamado PRISMARINE_INGOT en el registro, y de id es de prismarine_ingot
     // La segunda linea le añade una propiedad que hace que este en la tab del creativo de MISC.
     public static final RegistryObject<Item> PRISMARINE_INGOT = ITEMS.register("prismarine_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties()));
 
     // Registra Prismarine Sword
     // Esto simplemente lo registra, pero no añade propiedades de ningún tipo, eso lo deja a PrismarineSwordModifier
     // Y esto pasa con el resto de registros de esta Java Class
     public static final RegistryObject<Item> PRISMARINE_SWORD = ITEMS.register("prismarine_sword",
-            () -> new PrismarineSwordModifier());
+            () -> new PrismarineSwordModifier(new Item.Properties()));
 
     // Registra Prismarine Axe
     public static final RegistryObject<Item> PRISMARINE_AXE = ITEMS.register("prismarine_axe",
@@ -47,10 +49,8 @@ public class ModItems {
 
     // Registra King Blade con una custom tier, la cual se encuentra en KingBladeTier
     public static final RegistryObject<Item> KING_BLADE = ITEMS.register("king_blade", () ->
-            new SwordItem(
-                    KingBladeTier.ModTiers.KING_BLADE,
-                    0, -2.5F,
-                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()
+            new SwordItem(KingBladeTier.ModTiers.KING_BLADE, 0, -2.5F,
+                    new Item.Properties().fireResistant()
             ) {
         // Añade un efecto de Wither y Slowness al golpear a un mob además de prenderle en fuego durante 3 segundos.
                 @Override
@@ -66,7 +66,7 @@ public class ModItems {
 
     // Registra la Obsidian Sword, metiéndola en la categoria Combat del creativo, y las propiedades son definidas en ObsidianSwordItem
     public static final RegistryObject<Item> OBSIDIAN_SWORD = ITEMS.register("obsidian_sword", () ->
-            new ObsidianSwordItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant())
+            new ObsidianSwordItem(new Item.Properties().fireResistant())
     );
 
     public static void register(IEventBus eventBus) {

@@ -9,7 +9,7 @@
     "salt": 823749078,
     "spacing": 53,
     "separation": 23,
-    "type": "minecraft:random_spread",
+    "type": "complementary_structures:advanced_structure_placement",
     "frequency": 1.0
   }
 }
