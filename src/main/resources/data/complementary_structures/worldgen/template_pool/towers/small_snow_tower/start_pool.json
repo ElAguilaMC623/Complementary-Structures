@@ -1,0 +1,15 @@
+{
+  "name": "complementary_structures:towers/small_snow_tower/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "complementary_structures:s/small_snow_tower",
+        "processors": "complementary_structures:stone_brick_variations",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "complementary_structures:illagers/illager_palisade",
+      "structure": "complementary_structures:towers/small_desert_tower",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 823749113,
-    "spacing": 75,
-    "separation": 60,
+    "salt": 823749068,
+    "spacing": 50,
+    "separation": 30,
     "type": "minecraft:random_spread",
     "frequency": 1.0
   }
