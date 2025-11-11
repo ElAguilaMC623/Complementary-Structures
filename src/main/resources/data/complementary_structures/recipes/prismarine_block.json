@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "complementary_structures:prismarine_ingot" }
+  },
+  "result": {
+    "item": "complementary_structures:prismarine_block"
+  }
+}

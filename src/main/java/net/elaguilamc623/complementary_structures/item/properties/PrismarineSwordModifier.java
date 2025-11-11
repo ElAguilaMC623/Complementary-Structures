@@ -10,13 +10,11 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-// Esto le da al objeto 2 propiedades, ser de Diamond Tier y estar en la tab del creativo de combat.
 public class PrismarineSwordModifier extends SwordItem {
     public PrismarineSwordModifier(Item.Properties properties) {
         super(Tiers.DIAMOND, 3, -2.4f, properties);
     }
 
-    // Detecta si el jugador esta en agua
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slot, boolean selected) {
         if (!level.isClientSide && selected && entity instanceof LivingEntity living) {

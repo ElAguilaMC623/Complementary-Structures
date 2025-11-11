@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "complementary_structures:block/prismarine_block"
+  }
+}

@@ -9,13 +9,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-// Esto le da al objeto 2 propiedades, ser de Diamond Tier y estar en la tab del creativo de tools.
 public class PrismarineHoeModifier extends HoeItem {
     public PrismarineHoeModifier() {
         super(Tiers.DIAMOND, -1, 0.0f, new Properties());
     }
 
-    // Detecta si el jugador esta en agua
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slot, boolean selected) {
         if (!level.isClientSide && selected && entity instanceof LivingEntity living) {

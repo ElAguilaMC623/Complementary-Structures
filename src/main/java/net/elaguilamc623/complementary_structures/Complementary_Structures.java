@@ -1,6 +1,7 @@
 package net.elaguilamc623.complementary_structures;
 
 import com.mojang.logging.LogUtils;
+import net.elaguilamc623.complementary_structures.registry.ModBlocks;
 import net.elaguilamc623.complementary_structures.registry.ModItems;
 import net.elaguilamc623.complementary_structures.registry.ModPotions;
 import net.elaguilamc623.complementary_structures.registry.ModStructurePlacements;
@@ -33,6 +34,8 @@ public class Complementary_Structures
         ModItems.register(modEventBus);
         // Esto registra las pociones de ModPotions
         ModPotions.register(modEventBus);
+        // Esto registra los bloques de ModBlocks
+        ModBlocks.register(modEventBus);
 
         ModStructurePlacements.register(modEventBus);
 
@@ -75,7 +78,10 @@ public class Complementary_Structures
             event.accept(ModItems.PRISMARINE_PICKAXE);
             event.accept(ModItems.PRISMARINE_SHOVEL);
             event.accept(ModItems.PRISMARINE_HOE);
+        }
 
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.PRISMARINE_BLOCK);
         }
     }
 }
