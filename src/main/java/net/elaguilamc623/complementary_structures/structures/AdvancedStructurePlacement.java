@@ -2,7 +2,8 @@ package net.elaguilamc623.complementary_structures.structures;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.elaguilamc623.complementary_structures.registry.ModStructurePlacements;
+import net.elaguilamc623.complementary_structures.registry.structure.ModStructurePlacements;
+import net.elaguilamc623.complementary_structures.structures.worldgen.CustomExclusionZone;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Vec3i;
 import net.minecraft.resources.ResourceKey;

@@ -1,10 +1,9 @@
 package net.elaguilamc623.complementary_structures;
 
 import com.mojang.logging.LogUtils;
-import net.elaguilamc623.complementary_structures.registry.ModBlocks;
-import net.elaguilamc623.complementary_structures.registry.ModItems;
-import net.elaguilamc623.complementary_structures.registry.ModPotions;
-import net.elaguilamc623.complementary_structures.registry.ModStructurePlacements;
+import net.elaguilamc623.complementary_structures.registry.*;
+import net.elaguilamc623.complementary_structures.registry.structure.ModStructurePlacements;
+import net.elaguilamc623.complementary_structures.registry.structure.ModStructureGeneration;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +37,8 @@ public class Complementary_Structures
         ModBlocks.register(modEventBus);
 
         ModStructurePlacements.register(modEventBus);
+        ModStructureGeneration.register(modEventBus);
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

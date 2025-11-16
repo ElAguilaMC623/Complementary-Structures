@@ -1,4 +1,4 @@
-package net.elaguilamc623.complementary_structures.structures;
+package net.elaguilamc623.complementary_structures.structures.worldgen;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

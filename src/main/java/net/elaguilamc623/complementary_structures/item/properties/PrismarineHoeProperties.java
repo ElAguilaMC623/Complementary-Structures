@@ -4,14 +4,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-public class PrismarineShovelModifier extends ShovelItem {
-    public PrismarineShovelModifier() {
-        super(Tiers.DIAMOND, 1.5f, -3.0f, new Properties());
+public class PrismarineHoeProperties extends HoeItem {
+    public PrismarineHoeProperties() {
+        super(Tiers.DIAMOND, -1, 0.0f, new Properties());
     }
 
     @Override

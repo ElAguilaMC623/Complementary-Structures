@@ -5,13 +5,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-public class PrismarinePickaxeModifier extends PickaxeItem {
-    public PrismarinePickaxeModifier() {
-        super(Tiers.DIAMOND, 1, -2.8f, new Properties());
+public class PrismarineShovelProperties extends ShovelItem {
+    public PrismarineShovelProperties() {
+        super(Tiers.DIAMOND, 1.5f, -3.0f, new Properties());
     }
 
     @Override

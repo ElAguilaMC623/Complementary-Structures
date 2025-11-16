@@ -12,7 +12,6 @@ public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS =
             DeferredRegister.create(ForgeRegistries.POTIONS, "complementary_structures");
 
-    // Esto registra una poción llamada Swiftness III la cual da el efecto de Speed III durante 13 segundos
     public static final RegistryObject<Potion> SWIFTNESS_III = POTIONS.register("swiftness_iii", () ->
             new Potion(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 260, 2)) // Speed III
     );

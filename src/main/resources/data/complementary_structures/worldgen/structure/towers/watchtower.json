@@ -1,5 +1,8 @@
 {
-  "type": "minecraft:jigsaw",
+  "type": "complementary_structures:advanced_jigsaw_generation_checker",
+  "cannot_spawn_in_liquid": true,
+  "terrain_height_check_radius": 2,
+  "allowed_terrain_height_range": 10,
   "start_pool": "complementary_structures:towers/watchtower/start_pool",
   "size": 2,
   "max_distance_from_center": 80,

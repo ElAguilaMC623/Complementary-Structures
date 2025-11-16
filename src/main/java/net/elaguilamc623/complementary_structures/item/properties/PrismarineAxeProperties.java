@@ -4,14 +4,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-public class PrismarineHoeModifier extends HoeItem {
-    public PrismarineHoeModifier() {
-        super(Tiers.DIAMOND, -1, 0.0f, new Properties());
+public class PrismarineAxeProperties extends AxeItem {
+    public PrismarineAxeProperties() {
+        super(Tiers.DIAMOND, 5.0f, -3.0f, new Properties());
     }
 
     @Override

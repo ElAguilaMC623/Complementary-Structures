@@ -10,8 +10,8 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-public class PrismarineSwordModifier extends SwordItem {
-    public PrismarineSwordModifier(Item.Properties properties) {
+public class PrismarineSwordProperties extends SwordItem {
+    public PrismarineSwordProperties(Item.Properties properties) {
         super(Tiers.DIAMOND, 3, -2.4f, properties);
     }
 

@@ -11,8 +11,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 
-public class ObsidianSwordItem extends SwordItem {
-    public ObsidianSwordItem(Item.Properties properties) {
+public class ObsidianSwordProperties extends SwordItem {
+    public ObsidianSwordProperties(Item.Properties properties) {
         super(Tiers.NETHERITE, 3, -2.4F, properties);
     }
 
@@ -24,8 +24,8 @@ public class ObsidianSwordItem extends SwordItem {
             target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1));
         }
 
-        if (target.getType() == EntityType.ENDERMAN ||
-                target.getType() == EntityType.ENDERMITE ||
+        if (target.getType() == EntityType.ENDERMAN |
+                target.getType() == EntityType.ENDERMITE |
                 target.getType() == EntityType.SHULKER) {
             if (attacker instanceof Player player) {
                 target.hurt(player.level().damageSources().playerAttack(player), 2.5F);

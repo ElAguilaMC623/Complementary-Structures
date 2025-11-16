@@ -4,14 +4,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 
-public class PrismarineAxeModifier extends AxeItem {
-    public PrismarineAxeModifier() {
-        super(Tiers.DIAMOND, 5.0f, -3.0f, new Properties());
+public class PrismarinePickaxeProperties extends PickaxeItem {
+    public PrismarinePickaxeProperties() {
+        super(Tiers.DIAMOND, 1, -2.8f, new Properties());
     }
 
     @Override

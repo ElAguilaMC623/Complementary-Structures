@@ -1,4 +1,4 @@
-package net.elaguilamc623.complementary_structures.registry;
+package net.elaguilamc623.complementary_structures.registry.structure;
 
 import net.elaguilamc623.complementary_structures.structures.AdvancedStructurePlacement;
 import net.minecraft.core.registries.Registries;
