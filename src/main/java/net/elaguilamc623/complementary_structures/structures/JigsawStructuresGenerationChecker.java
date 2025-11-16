@@ -16,16 +16,16 @@ import net.minecraft.world.level.levelgen.structure.StructureType;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 import java.util.Optional;
 
-public class AdvancedStructureGenerationChecker extends Structure {
+public class JigsawStructuresGenerationChecker extends Structure {
 
-    public static final MapCodec<AdvancedStructureGenerationChecker> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
+    public static final MapCodec<JigsawStructuresGenerationChecker> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
             settingsCodec(instance),
             StructureTemplatePool.CODEC.fieldOf("start_pool").forGetter(s -> s.startPool),
             Codec.intRange(0, 30).fieldOf("size").forGetter(s -> s.size),
             Codec.BOOL.fieldOf("cannot_spawn_in_liquid").orElse(false).forGetter(s -> s.cannotSpawnInLiquid),
             Codec.intRange(1, 100).optionalFieldOf("terrain_height_check_radius").forGetter(s -> s.terrainHeightCheckRadius),
             Codec.intRange(1, 1000).optionalFieldOf("allowed_terrain_height_range").forGetter(s -> s.allowedTerrainHeightRange)
-    ).apply(instance, AdvancedStructureGenerationChecker::new));
+    ).apply(instance, JigsawStructuresGenerationChecker::new));
 
     public final Holder<StructureTemplatePool> startPool;
     public final int size;
@@ -33,12 +33,12 @@ public class AdvancedStructureGenerationChecker extends Structure {
     public final Optional<Integer> terrainHeightCheckRadius;
     public final Optional<Integer> allowedTerrainHeightRange;
 
-    public AdvancedStructureGenerationChecker(StructureSettings settings,
-                                              Holder<StructureTemplatePool> startPool,
-                                              int size,
-                                              boolean cannotSpawnInLiquid,
-                                              Optional<Integer> terrainHeightCheckRadius,
-                                              Optional<Integer> allowedTerrainHeightRange) {
+    public JigsawStructuresGenerationChecker(StructureSettings settings,
+                                             Holder<StructureTemplatePool> startPool,
+                                             int size,
+                                             boolean cannotSpawnInLiquid,
+                                             Optional<Integer> terrainHeightCheckRadius,
+                                             Optional<Integer> allowedTerrainHeightRange) {
         super(settings);
         this.startPool = startPool;
         this.size = size;

@@ -1,5 +1,5 @@
 {
-  "type": "complementary_structures:advanced_jigsaw_generation_checker",
+  "type": "complementary_structures:jigsaw_generation_checker",
   "cannot_spawn_in_liquid": true,
   "terrain_height_check_radius": 1,
   "allowed_terrain_height_range": 8,
