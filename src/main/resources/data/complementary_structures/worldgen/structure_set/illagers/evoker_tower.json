@@ -7,6 +7,10 @@
   ],
   "placement": {
     "salt": 823749103,
+    "custom_exclusion_zone": {
+      "sets": ["#complementary_core:all_structures"],
+      "radius": 3
+    },
     "spacing": 50,
     "separation": 25,
     "type": "complementary_structures:advanced_structure_placement",

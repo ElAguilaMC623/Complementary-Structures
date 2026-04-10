@@ -6,7 +6,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
-version = "1.5.1"
+version = "1.6.0"
 group = "net.elaguilamc623.complementary_structures"
 
 base {
@@ -117,10 +117,11 @@ repositories {
         url = "https://libraries.minecraft.net/"
     }
     mavenCentral()
-
+    mavenLocal()
 }
 
 dependencies {
+    implementation "net.elaguilamc623:complementary_core:1.2.2"
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
     // The "userdev" classifier will be requested and setup by ForgeGradle.

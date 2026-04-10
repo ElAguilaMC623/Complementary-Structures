@@ -6,7 +6,7 @@
   "start_pool": "complementary_structures:towers/small_snow_tower/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#complementary_structures:has_structure/snowy_biomes/snowy_biomes_2m",
+  "biomes": "#complementary_core:has_structure/snowy_biomes/snowy_biomes_2m",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

@@ -1,12 +1,12 @@
 {
-  "type": "complementary_structures:jigsaw_generation_checker",
+  "type": "complementary_structures:jigsaw_nether_generation_checker",
   "cannot_spawn_in_liquid": true,
   "terrain_height_check_radius": 2,
   "allowed_terrain_height_range": 9,
   "start_pool": "complementary_structures:towers/blackstone_tower/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#complementary_structures:has_structure/nether_biomes/nether_biomes_1v",
+  "biomes": "#complementary_core:has_structure/nether_biomes/nether_biomes_1v",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

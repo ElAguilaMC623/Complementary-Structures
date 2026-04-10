@@ -6,7 +6,7 @@
   "start_pool": "complementary_structures:illagers/illager_palisade/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#complementary_structures:has_structure/temperate_biomes/temperate_biomes_6m",
+  "biomes": "#complementary_core:has_structure/temperate_biomes/temperate_biomes_6m",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
